@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfLaba.Ex1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLaba"
+        mc:Ignorable="d"
+        Title="Ex1" Height="450" Width="800">
+    <StackPanel Orientation="Vertical">
+        <TextBox Name="tb1"/>
+        <TextBox Text="{Binding ElementName=tb1, Path=Text}"/>
+        <Slider Name="sl1"/>
+        <Slider Value="{Binding ElementName=sl1, Path=Value}"/>
+    </StackPanel>
+</Window>
